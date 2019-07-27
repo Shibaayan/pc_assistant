@@ -114,8 +114,6 @@ def play_music():
 
     for line in listOfLines:
         directory_list.append(line.strip())
-    
-    print(directory_list)
 
     for x in range(1):
         rindex = random.randint(1,len(directory_list))
