@@ -105,7 +105,22 @@ def search_youtube(query):
 
 
 def play_music():
+    fileHandler = open ("music_directories.txt", "r")
+
+    listOfLines = fileHandler.readlines()
+
+    fileHandler.close()
+    directory_list = []
+
+    for line in listOfLines:
+        directory_list.append(line.strip())
     
+    print(directory_list)
+
+    for x in range(1):
+        rindex = random.randint(1,len(directory_list))
+    music_dir = directory_list[rindex]
+
     music_dir = "D:\\Music"
     songs = os.listdir(music_dir)
     # print(songs)
