@@ -5,10 +5,10 @@ how to run
 ==========
 Kindly ensure a good internet connection and python3 as-well-as all required packages are installed.
 
-Open the folder where the project files are located.
-Press Shift + right-click
-click on "Open PowerShell window here", a PowerShell window will open
-type "python main.py" and press 'enter'
+1) Open the folder where the project files are located.
+2) Press Shift + right-click
+3) click on "Open PowerShell window here", a PowerShell window will open
+4) type "python main.py" and press 'enter'
 
 there are some basic voice commands like...
 ===========================================
