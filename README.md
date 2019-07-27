@@ -12,8 +12,8 @@ type "python main.py" and press 'enter'
 
 there are some basic voice commands like...
 ===========================================
-search google "mountain"
-open google
-search youtube "mountain"
+search google "mountain",
+open google,
+search youtube "mountain",
 what is the time now?
 etc. 
