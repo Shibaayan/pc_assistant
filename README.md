@@ -18,6 +18,10 @@ search youtube "mountain",
 what is the time now?
 etc. 
 
-you can add your favourite music directories in...
+Now you can add your favourite music directories in...
 ==================================================
-music_directories.txt
+'music_directories.txt' !
+
+More to come
+============
+Stay in touch
