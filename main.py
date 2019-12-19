@@ -57,7 +57,7 @@ def takeCommand():
     try:
         output("Recognizing...")
         query = r.recognize_google(audio, language='en-us')
-        output(f"User said : {query}\n")
+        output(f"you said : {query}\n")
     except Exception as e:
         # print(e)
         output("Say that again please...")
@@ -129,9 +129,13 @@ def play_music():
     #music_dir = "D:\\Music"
     songs = os.listdir(music_dir)
     # print(songs)
-    for x in range(1):
-        rindex = random.randint(1,len(songs))
-    os.startfile(os.path.join(music_dir, songs[rindex]))
+    try:
+        for x in range(1):
+            rindex = random.randint(1,len(songs))
+        os.startfile(os.path.join(music_dir, songs[rindex]))
+    except Exception as e:
+        # print(e)
+        output("Please keep only audio files in folder.")
 
 
 def query_mail():
