@@ -45,7 +45,7 @@ def takeCommand():
     with sr.Microphone() as source:
         output("Waiting for response...")
         r.pause_threshold = 1 # pause_threshold is seconds of non-speaking audio before a phrase is considered complete
-        r.energy_threshold = 600
+        r.energy_threshold = 300
         audio = r.listen(source)
     try:
         output("Recognizing...")
@@ -114,14 +114,12 @@ def play_music():
 
     for line in listOfLines:
         directory_list.append(line.strip())
-    
-    print(directory_list)
 
     for x in range(1):
         rindex = random.randint(1,len(directory_list))
     music_dir = directory_list[rindex]
 
-    music_dir = "D:\\Music"
+    #music_dir = "D:\\Music"
     songs = os.listdir(music_dir)
     # print(songs)
     for x in range(1):
