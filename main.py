@@ -11,7 +11,7 @@ def check_requirements():
     subprocess.call('pip install beautifulsoup4', shell = True)
 
 
-#check_requirements()
+check_requirements()
 
 # pre defined modules
 import datetime
