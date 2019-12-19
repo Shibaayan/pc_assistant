@@ -11,12 +11,12 @@ def check_requirements():
     subprocess.call('pip install beautifulsoup4', shell = True)
 
 
-check_requirements()
+#check_requirements()
 
 # pre defined modules
 import datetime
 import webbrowser
-import os
+import sys, time, os
 import random
 
 # third party modules
@@ -29,10 +29,16 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
+def animate(message):
+    for char in message:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.08)
 
 def output(response):
-    print(response)
+    animate(response)
     speak(response)
+    os.system("cls")
 
 
 def speak(audio):
