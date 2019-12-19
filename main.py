@@ -35,6 +35,7 @@ def animate(message):
         sys.stdout.flush()
         time.sleep(0.08)
 
+
 def output(response):
     animate(response)
     speak(response)
