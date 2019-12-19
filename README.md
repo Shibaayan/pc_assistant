@@ -17,3 +17,11 @@ open google,
 search youtube "mountain",
 what is the time now?
 etc. 
+
+Now you can add your favourite music directories in...
+==================================================
+'music_directories.txt' !
+
+More to come
+============
+Stay in touch
