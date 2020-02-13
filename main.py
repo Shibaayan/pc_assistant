@@ -2,16 +2,19 @@
 
 # pre defined libraries
 import subprocess
+    
 
-def check_requirements():
+try:
+    # third party modules
+    import pyttsx3
+    import speech_recognition as sr
+    import wikipedia
+except Exception as e:
     print("Checking requirements / installing...")
     subprocess.call('pip install pyttsx3', shell = True)
     subprocess.call('pip install speechRecognition', shell = True)
     subprocess.call('pip install wikipedia', shell = True)
-    subprocess.call('pip install beautifulsoup4', shell = True)
 
-
-check_requirements()
 
 # pre defined modules
 import datetime
@@ -19,10 +22,6 @@ import webbrowser
 import sys, time, os
 import random
 
-# third party modules
-import pyttsx3
-import speech_recognition as sr
-import wikipedia
 
 # microsoft speech api
 engine = pyttsx3.init('sapi5')
