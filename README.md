@@ -3,7 +3,7 @@ All basic operations like 'play music', 'search google India!', 'search youtube 
 
 how to run
 ==========
-Kindly ensure a good internet connection and python3 as-well-as all required packages are installed.
+Kindly ensure a good internet connection and python3 installed.
 
 1) Open the folder where the project files are located.
 2) Press Shift + right-click
